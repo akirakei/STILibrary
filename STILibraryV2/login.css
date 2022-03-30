@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    max-height: 100vh;
+}
+
+/* header */
+
+header {
+
+    background-color: #2569B8;
+    display: flex;
+    position: relative;
+    height: 5em;
+}
+
+header img {
+    position: relative;
+    left: 20%;
+    top: 15%;
+    
+}
+
+header h4 { 
+    font-size: 1.2rem;
+    color:white;
+    font-weight: 700;
+    margin-top: 1.5em;
+    opacity: 95%;
+}
+
+.bg-image {
+    height: 80vh;
+    /* background-image: url(sti-college-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+.container > * {
+    /* border:2px solid black; */
+    position: relative;
+    width: 100%;
+    padding: 5em;
+    height: 100%;
+}   
+
+/* left-container */
+
+.container .left-container .form-container {
+    position: relative;
+    top: 10%;
+    width: clamp(20rem, 90%, 40rem);
+    height: 70%;
+    background-color: #F4F4F4;
+    margin: auto;
+    padding: 2em;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container .left-container .form-container h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #434343;
+    margin: auto;
+}
+
+.container .left-container .form-container input[type="name"], input[type="password"] {
+    height: 12%;
+    border:none;
+    border-radius: 7px;
+    padding: 1% 2%;
+    background-color: #E1E1E1;
+    color: 434343;
+    font-size: 1em;
+    font-weight: 300;
+    transition: 150ms ease-in-out;
+    font-family: Inter;
+}
+
+.container .left-container .form-container input[type="name"]:focus, input[type="password"]:focus {
+    background-color: #2569B8;
+    color: white;
+    outline: none;
+}
+
+.container .left-container .form-container input:focus::placeholder {
+    color: white;
+    opacity: 40%;
+}
+
+.container .left-container .form-container input[type="submit"]{
+    position: relative;
+    top: -1em;
+    height: 10%;
+    width: 50%;
+    margin: auto;
+    font-family: Inter;
+    border:none;
+    transition: 100ms ease-in-out;
+    font-size: 1em;
+    background-color: #FFF200;
+    border-radius: 7px;
+}
+
+.container .left-container .form-container input[type="submit"]:hover {
+    background-color: #434343;
+    opacity: 50%;
+    color: white;
+}
+
+.container .left-container .form-container h6 {
+    color: #434343;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.container .left-container .form-container a {
+    color:#2569B8;
+
+}
+
+.container .left-container .form-container a:hover {
+    color:#FFF200;
+}
+
+
+
+/* right-container */
+
+.container .right-container {
+    /* background-color: #F8F8F8; */
+    background-image: url(sti-image-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #434343;
+}
+
+.container .right-container h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 300;
+    width: clamp(20rem, 100%, 40rem);
+    margin-left: .5em;
+    position: relative;
+    top: 55%;
+    color: white;
+    text-shadow: 1px 4px 2px #141414;
+}
+
+.container .right-container #highlight {
+    font-weight: 800;
+}
+
+.container .right-container h3 {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 300;
+    width: clamp(25rem, 85%, 50rem);
+    margin-left: 1em;
+    opacity: 85%;
+    margin-top: 3em;
+    position: relative;
+    top:45%;
+    color:white;
+    text-shadow: 1px 2px 1px #141414;
+}
+
+.container .right-container #subtitle-highlight {
+    font-weight: 600;
+}
+
+/* footer */
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 7vh;
+    bottom:0%;
+    color: white;
+}
+
+footer h5 {
+    font-size: 1em;
+    text-align: left;
+    font-weight: 300;
+    padding: 1em;
+    margin-top:.5em;
+
+}
+
+footer a {
+
+    color: white;
+    font-weight: 700;
+}
